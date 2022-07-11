@@ -1,0 +1,8 @@
+.last-container {
+  background: $colorBlue;
+  padding: 20px 20px 0px 20px;
+
+  @media screen and (min-width: 992px) {
+    padding: 55px 124px 0 124px;
+  }
+}

@@ -1,0 +1,74 @@
+.third-container {
+  background: $colorBackground;
+
+  @media screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 95px 0;
+  }
+
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > h2 {
+      width: 100%;
+      font-weight: $font700;
+      font-size: 1.625rem;
+      line-height: 1.688rem;
+      text-align: center;
+      color: $colorBlue;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 50px;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 88px;
+      }
+    }
+  }
+}
+
+.how-it-works {
+  display: inline-block;
+  text-align: center;
+
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 257px;
+    margin-bottom: 0;
+  }
+
+  & > img {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      width: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: initial;
+    }
+  }
+
+  & > h3 {
+    font-weight: $font500;
+    font-size: 1.125rem;
+    line-height: 1.188rem;
+    margin-bottom: 10px;
+  }
+
+  & > p {
+    font-weight: $font400;
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}

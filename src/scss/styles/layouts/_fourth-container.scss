@@ -1,0 +1,303 @@
+.fourth-container {
+  position: relative;
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 150px 0 123px 0;
+  }
+}
+
+.client-say {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-bottom: 324px;
+  }
+
+  & > h2 {
+    font-weight: $font700;
+    font-size: 1.625rem;
+    line-height: 1.688rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 130px;
+    }
+  }
+
+  &__image-background {
+    width: 50%;
+    background: $colorBackground;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 40px;
+    position: relative;
+    height: 250px;
+
+    @media screen and (min-width: 768px) {
+      height: 400px;
+    }
+
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      left: 0;
+      top: 290px;
+    }
+
+    @media screen and (min-width: 1410px) {
+      top: 307px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 180px;
+    bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 290px;
+      left: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 178px;
+    }
+
+    @media screen and (min-width: 1410px) {
+      width: initial;
+    }
+  }
+}
+
+.feedback {
+  position: relative;
+  padding: 20px;
+  width: 50%;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 992px) {
+    top: 100px;
+  }
+
+  @media screen and (min-width: 1410px) {
+    top: 75px;
+  }
+
+  & > blockquote {
+    &::before {
+      content: '\201C';
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      font-size: 12rem;
+      color: $colorGrey;
+      opacity: 0.5;
+      font-family: Arial, Helvetica, sans-serif;
+
+      @media screen and (min-width: 1200px) {
+        top: -50px;
+      }
+    }
+
+    & > p {
+      font-weight: $font400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      opacity: 0.5;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    & > figcaption {
+      font-weight: $font500;
+      font-size: 1.125rem;
+      line-height: 1.188rem;
+    }
+  }
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  bottom: -50px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: -117px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorWhite;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    height: 50px;
+    width: 50px;
+
+    @media screen and (min-width: 1200px) {
+      height: 80px;
+      width: 80px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px $colorBlue;
+    }
+
+    &_left {
+      background-color: $colorBlue;
+      border-radius: 4px 0 0 4px;
+    }
+
+    &_right {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+.download-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media screen and (min-width: 576px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-left: 0;
+  }
+
+  &__image {
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/client-say/phone.svg);
+    background-position: center;
+    width: 300px;
+    height: 290px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+
+    @media screen and (min-width: 576px) {
+      position: initial;
+      flex-basis: 50%;
+      opacity: initial;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 350px;
+      height: 340px;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 450px;
+      height: 440px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 516px;
+      height: 459px;
+      position: relative;
+      right: 75px;
+    }
+  }
+
+  &__container {
+    width: 90%;
+
+    @media screen and (min-width: 576px) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 444px;
+    }
+
+    & > h2 {
+      font-weight: $font700;
+      font-size: 1.563rem;
+      line-height: 1.625rem;
+      text-align: center;
+      margin-bottom: 16px;
+      color: $colorBase;
+    }
+
+    & > p {
+      font-weight: $font400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      opacity: 0.5;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__download-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 300px;
+
+    @media screen and (min-width: 1410px) {
+      flex-basis: 366px;
+    }
+
+    & > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: $colorBase;
+      border-radius: 5px;
+      height: 48px;
+
+      @media screen and (min-width: 768px) {
+        width: 165px;
+        height: 52px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px $colorBase;
+      }
+
+      & > img {
+        max-width: 100%;
+        height: auto;
+        width: 90%;
+
+        @media screen and (min-width: 992px) {
+          width: initial;
+        }
+      }
+    }
+  }
+}

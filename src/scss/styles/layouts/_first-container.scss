@@ -1,0 +1,18 @@
+.first-container {
+  background: linear-gradient(
+      181.02deg,
+      rgba(74, 154, 211, 0.2) 17.33%,
+      rgba(74, 153, 211, 0) 75.91%
+    ),
+    $colorWhite;
+
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+
+  @media screen and (min-width: 992px) {
+    padding: 45px 0 75px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 45px 0 151px 0;
+  }
+}

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Objective, Arial, Helvetica, sans-serif;
+  color: $colorBase;
+
+  @media screen and (max-width: 991px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1410px) {
+    font-size: 16px;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+}
+
+.width-container {
+  &_first {
+    padding: 20px;
+
+    @media screen and (min-width: 576px) {
+      padding: 45px;
+    }
+  }
+
+  &_second {
+    padding: 0 20px;
+
+    @media screen and (min-width: 576px) {
+      padding: 0 50px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 950px;
+    padding: 0;
+    margin: auto;
+  }
+}

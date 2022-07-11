@@ -1,0 +1,176 @@
+.second-container {
+  position: relative;
+  padding: 80px 0 90px 0;
+
+  @media screen and (min-width: 992px) {
+    padding: 150px 0 0 0;
+    margin-bottom: -382px;
+  }
+}
+
+.second-container-article {
+  width: 100%;
+  position: relative;
+
+  & > h2 {
+    font-weight: $font500;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    color: $colorTitles;
+
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 992px) {
+      text-align: start;
+      width: 395px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.we-do {
+  width: 100%;
+  position: relative;
+  background: $colorWhite;
+  box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+  border-radius: 10px;
+
+  @media screen and (max-width: 991px) {
+    margin: 0 auto 1rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 48px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 380px;
+    margin-bottom: 0;
+  }
+
+  &_first {
+    @media screen and (min-width: 992px) {
+      top: -120px;
+      left: 500px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 572px;
+    }
+  }
+
+  &_second {
+    @media screen and (min-width: 992px) {
+      top: -350px;
+      left: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 87px;
+    }
+  }
+
+  &_third {
+    @media screen and (min-width: 992px) {
+      top: -533px;
+      left: 500px;
+    }
+    @media screen and (min-width: 1200px) {
+      left: 572px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin: auto;
+    display: block;
+
+    &_first {
+      width: 200px;
+
+      @media screen and (min-width: 992px) {
+        left: 68px;
+        top: -30px;
+      }
+    }
+
+    &_second {
+      width: 160px;
+      right: 25px;
+
+      @media screen and (min-width: 992px) {
+        right: 124px;
+      }
+    }
+
+    &_third {
+      width: 135px;
+      right: 10px;
+
+      @media screen and (min-width: 992px) {
+        right: 124px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      width: initial;
+      position: absolute;
+    }
+  }
+
+  &__text-container {
+    margin-top: 20px;
+
+    @media screen and (min-width: 992px) {
+      margin-top: 188px;
+    }
+
+    @media screen and (min-width: 1410px) {
+      width: 284px;
+    }
+
+    & > h3 {
+      font-weight: $font500;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.02rem;
+      margin-bottom: 16px;
+    }
+
+    & > p {
+      font-weight: $font400;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      opacity: 0.6;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link-block {
+    width: 127px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $colorBlue;
+    }
+
+    & > p {
+      font-weight: $font500;
+      font-size: 0.875rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.05rem;
+      color: $colorBlue;
+    }
+  }
+}

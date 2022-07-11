@@ -1,0 +1,68 @@
+.header {
+  margin-bottom: 71px;
+
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 146px;
+  }
+
+  & > h1 {
+    text-align: center;
+    display: block;
+    color: $colorBlue;
+    font-size: 2.5rem;
+    font-weight: $font700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 0;
+    }
+
+    & > a {
+      text-decoration: none;
+      color: $colorBlue;
+    }
+  }
+
+  &__nav {
+    text-align: center;
+    display: block;
+
+    & > ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @media screen and (min-width: 576px) {
+        width: 312px;
+      }
+
+      & > li {
+        & > a {
+          font-weight: $font400;
+          font-size: 1.125rem;
+          text-decoration: none;
+          color: $colorTitles;
+          text-transform: capitalize;
+
+          &:hover {
+            font-weight: $font500;
+            color: $colorBlue;
+          }
+        }
+
+        & > .active {
+          font-weight: $font500;
+          color: $colorBlue;
+        }
+      }
+    }
+  }
+}

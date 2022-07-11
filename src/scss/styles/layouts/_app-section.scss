@@ -1,0 +1,158 @@
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+    justify-content: space-between;
+  }
+}
+
+.app-section {
+  width: 85%;
+  margin: auto;
+  z-index: 1;
+
+  @media screen and (min-width: 576px) {
+    flex-basis: 50%;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 610px;
+  }
+
+  & > h2 {
+    font-weight: $font500;
+    color: $colorTitles;
+    margin-bottom: 14px;
+    text-shadow: 0 0 5px $colorWhite;
+
+    @media screen and (min-width: 576px) {
+      text-shadow: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 3.125rem;
+      line-height: 4.375rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 595px;
+    }
+  }
+
+  & > p {
+    font-weight: $font400;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 60px;
+    text-shadow: 0 0 5px $colorWhite;
+
+    @media screen and (min-width: 576px) {
+      text-shadow: none;
+    }
+
+    @media screen and (min-width: 1410px) {
+      width: 636px;
+    }
+  }
+
+  &__download-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+
+    @media screen and (min-width: 992px) {
+      width: 380px;
+    }
+
+    & > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: $colorBlue;
+      border-radius: 5px;
+
+      @media screen and (max-width: 767px) {
+        flex-basis: 45%;
+        height: 52px;
+        max-width: 180px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 150px;
+        height: 60px;
+      }
+
+      @media screen and (min-width: 992px) {
+        width: 180px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px $colorBlue;
+      }
+
+      & > img {
+        max-width: 100%;
+        height: auto;
+
+        @media screen and (max-width: 767px) {
+          width: 80%;
+        }
+
+        @media screen and (min-width: 768px) {
+          width: initial;
+        }
+      }
+    }
+  }
+}
+
+.phones-mockup {
+  background-image: url(../images/Mockup.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+
+  @media screen and (min-width: 576px) {
+    position: initial;
+    flex-basis: 50%;
+    opacity: initial;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 350px;
+    height: 415px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: -86px;
+  }
+
+  @media screen and (min-width: 1410px) {
+    width: 441px;
+    height: 535px;
+    right: -150px;
+  }
+}
